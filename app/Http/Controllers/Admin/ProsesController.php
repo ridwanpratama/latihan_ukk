@@ -23,7 +23,7 @@ class ProsesController extends Controller
 
         return back();
     }
-
+    
     public function tolak($id)
     {
         $data = Ppdb::find($id);

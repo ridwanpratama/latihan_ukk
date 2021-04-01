@@ -19,11 +19,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin', 'HomeController@adminHome')->name('admin.home');
+Route::get('home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth', 'ceklevel:siswa'])->group(function () {
-    Route::get('/print', 'PrintController@print')->name('print');
+    Route::get('print', 'PrintController@print')->name('print');
     Route::resource('ppdb', 'PpdbController');
 });
 
