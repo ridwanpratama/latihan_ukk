@@ -9,10 +9,9 @@
 5. Generate key inside `.env` file by `php artisan key:generate`
 6. Start your Apache & MySQL service
 7. Open `.env` and edit database config
-8. Run migration using `php artisan migrate` command
- 
+8. Run migration using `php artisan migrate` command 
 10. Run the project with command `php artisan serve`
-11. 
+
 ## Contact Info
 
 Contact me at:
