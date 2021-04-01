@@ -29,8 +29,8 @@ Route::middleware(['auth', 'ceklevel:siswa'])->group(function () {
 Route::middleware(['auth', 'ceklevel:admin'])->group(function () {
     Route::get('proses', 'Admin\ProsesController@proses')->name('proses');
 
-    Route::get('proses/{id}', 'Admin\ProsesController@terima')->name('terima');
-    Route::post('proses/{id}', 'Admin\ProsesController@tolak')->name('tolak');
+    Route::get('terima/{id}', 'Admin\ProsesController@terima')->name('terima');
+    Route::get('tolak/{id}', 'Admin\ProsesController@tolak')->name('tolak');
 
     Route::get('diterima', 'Admin\ProsesController@diterima')->name('diterima');
     Route::get('ditolak', 'Admin\ProsesController@ditolak')->name('ditolak');
